@@ -68,6 +68,11 @@ $(document).ready(function(){
       $("#unassignedTasks").append("<li>" + task + "</li>");
     };
 
+    var PriorityThorTasks = ToDoList.describeTasksForPersonWithPriority(people.thor, tasks);
+    for(var task of PriorityThorTasks){
+      $("#PriorityThorTasks").append("<li>" + task + "</li>");
+    };
+
 
   });
 
