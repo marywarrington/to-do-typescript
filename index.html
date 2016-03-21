@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>Hello TypeScript!</title>
+  </head>
+  <body>
+    <form id="types">
+      <label for="type">Select a Type for Your Task</label>
+      <select id="type" name="type">
+        <option value="default">Choose One!</option>
+        <option value="HomeTask">Home</option>
+        <option value="HobbyTask">Hobby</option>
+        <option value="WorkTask">Work</option>
+      </select>
+      <!-- <button type="submit" name="button">Submit</button> -->
+    </form>
+    <form id="taskInfo">
+      <label for="description">Task Description</label>
+      <input id="description" type="text" name="description" value="">
+      <label class="priority" for="priority">Priority of Task</label>
+      <select id="priority" class="priority" name="priority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <label class="assignedTo" for="assignedTo">Assign this task to</label>
+      <select id="assignedTo" class="assignedTo" name="assignedTo">
+        <option value="diane">Diane</option>
+        <option value="thor">Thor</option>
+        <option value="loki">Loki</option>
+      </select>
+      <label for="dueDate" class="dueDate">Due Date</label>
+      <input type="date" name="date" class="dueDate" value="" id="dueDate">
+      <button type="submit" name="button" id="createTask">Create a Task</button>
+    </form>
+    <h2>Thor Tasks</h2>
+    <ul id="thorTasks"></ul>
+    <h2>Diane Tasks</h2>
+    <ul id="dianeTasks"></ul>
+    <h2>Loki Tasks</h2>
+    <ul id="lokiTasks"></ul>
+    <h2>Unassigned Tasks</h2>
+    <ul id="unassignedTasks"></ul>
+  </body>
+</html>
